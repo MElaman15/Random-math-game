@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="score">
+            <p style="color: #27ff81;">Correct answers: <span class="correct">0</span></p>
+            <p style="color: rgb(255, 42, 88);">Wrong answers: <span class="wrong">0</span></p>
+            <p style="color: white;">Time: <span class="time"></span></p>
+        </div>
+        <div class="question"></div>
+        <div class="iAp">
+            <input type="text" placeholder="Answer here" class="answer">
+        </div>
+
+        <div class="refresh_div">
+            <button onclick="refresh()">
+                REFRESH
+                <i class="fa-solid fa-arrow-rotate-right"></i>
+            </button>
+
+            <button onclick="open_menu()">
+                MENU
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div class="choose">
+            <div class="box"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
